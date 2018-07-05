@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		C91FE5D220EE58C80074ECFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91FE5D120EE58C80074ECFA /* AppDelegate.swift */; };
 		C91FE5D420EE58C80074ECFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91FE5D320EE58C80074ECFA /* ViewController.swift */; };
-		C91FE5D720EE58C80074ECFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91FE5D520EE58C80074ECFA /* Main.storyboard */; };
 		C91FE5D920EE58C90074ECFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91FE5D820EE58C90074ECFA /* Assets.xcassets */; };
 		C91FE5DC20EE58C90074ECFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91FE5DA20EE58C90074ECFA /* LaunchScreen.storyboard */; };
+		C91FE5E420EE592B0074ECFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91FE5E320EE592B0074ECFA /* Extensions.swift */; };
+		C91FE5E620EE593E0074ECFA /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91FE5E520EE593E0074ECFA /* Gameplay.swift */; };
+		C91FE5E820EE597D0074ECFA /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91FE5E720EE597D0074ECFA /* AnalogJoystick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91FE5CE20EE58C80074ECFA /* JoystickTank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoystickTank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91FE5D120EE58C80074ECFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91FE5D320EE58C80074ECFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C91FE5D620EE58C80074ECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C91FE5D820EE58C90074ECFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91FE5DB20EE58C90074ECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91FE5DD20EE58C90074ECFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91FE5E320EE592B0074ECFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C91FE5E520EE593E0074ECFA /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
+		C91FE5E720EE597D0074ECFA /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		C91FE5D020EE58C80074ECFA /* JoystickTank */ = {
 			isa = PBXGroup;
 			children = (
+				C91FE5E720EE597D0074ECFA /* AnalogJoystick.swift */,
 				C91FE5D120EE58C80074ECFA /* AppDelegate.swift */,
 				C91FE5D320EE58C80074ECFA /* ViewController.swift */,
-				C91FE5D520EE58C80074ECFA /* Main.storyboard */,
 				C91FE5D820EE58C90074ECFA /* Assets.xcassets */,
 				C91FE5DA20EE58C90074ECFA /* LaunchScreen.storyboard */,
 				C91FE5DD20EE58C90074ECFA /* Info.plist */,
+				C91FE5E320EE592B0074ECFA /* Extensions.swift */,
+				C91FE5E520EE593E0074ECFA /* Gameplay.swift */,
 			);
 			path = JoystickTank;
 			sourceTree = "<group>";
@@ -124,7 +130,6 @@
 			files = (
 				C91FE5DC20EE58C90074ECFA /* LaunchScreen.storyboard in Resources */,
 				C91FE5D920EE58C90074ECFA /* Assets.xcassets in Resources */,
-				C91FE5D720EE58C80074ECFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91FE5D420EE58C80074ECFA /* ViewController.swift in Sources */,
+				C91FE5E820EE597D0074ECFA /* AnalogJoystick.swift in Sources */,
+				C91FE5E620EE593E0074ECFA /* Gameplay.swift in Sources */,
+				C91FE5E420EE592B0074ECFA /* Extensions.swift in Sources */,
 				C91FE5D220EE58C80074ECFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C91FE5D520EE58C80074ECFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C91FE5D620EE58C80074ECFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C91FE5DA20EE58C90074ECFA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
